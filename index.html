@@ -4,15 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Age calculator app</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="main.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body>
-  <div class="backgroundSquare">
 
+<body>
+  <div class="centeredBox backgroundSquare">
+    <div class="centeredBox contentBox">
+      
+      <form id="calculatorForm">
+        <div class="dateFieldBox">
+          <div class="inputGroup">
+            <label for="day_field">Day</label>
+            <input type="number" id="day_field"/>
+          </div>
+
+          <div class="inputGroup">
+            <label for="month_field">Month</label>
+            <input type="number" id="month_field"/>
+          </div>
+
+          <div class="inputGroup">
+            <label for="year_field">Year</label>
+            <input type="number" id="year_field"/>
+          </div>
+        </div>
+      </form>
+
+    </div>
   </div>
 </body>
 </html>

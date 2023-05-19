@@ -8,11 +8,28 @@
     --natural-off-black:hsl(0,0%,8%);
 }
 
-.backgroundSquare {
-    background-color: var(--natural-off-white);
-    width: 80%;
-    height: 80%;
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular') format('truetype');
+  }
+@font-face {
+    font-family: 'Poppins-BoldItalic';
+    src: url('fonts/Poppins-BoldItalic') format('truetype');
+  }
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('fonts/Poppins-ExtraBold') format('truetype');
+  }
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url('fonts/Poppins-ExtraBoldItalic') format('truetype');
+  }
+@font-face {
+    font-family: 'Poppins-Italic';
+    src: url('fonts/Poppins-Italic') format('truetype');
+  }
 
+  .centeredBox {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -20,4 +37,50 @@
     right: 0;
 
     margin: auto;
+}
+.backgroundSquare {
+    background-color: var(--natural-off-white);
+    width: 80%;
+    height: 80%;
+}
+
+.contentBox {
+    background-color: var(--natural-white);
+    width: 60%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.dateFieldBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 200px;
+    padding-left: 20px;
+    padding-top: 20px;;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-family: 'Poppins-ExtraBold', sans-serif;
+    font-size: small;
+    font-weight: bolder;
+    text-transform:uppercase;
+}
+
+input {
+    margin-left: 10px;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    font-size: x-large;
 }
