@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const diffDate = new Date(diffMs);
                 const years = diffDate.getUTCFullYear() - 1970;
                 const months = diffDate.getUTCMonth();
-                const days = diffDate.getUTCDate() + 1;
+                const days = diffDate.getUTCDate() - 1;
                 console.log(days);
 
                 setDiffInPage(document.getElementById("years"), years);
